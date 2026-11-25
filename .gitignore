@@ -1,0 +1,24 @@
+# Kubernetes secrets and kubeconfigs
+kubeconfig*
+*.secret
+*.pem
+*.key
+
+# Helm
+*.tgz
+helm-history/
+
+# Local storage claims
+local-path-provisioner/
+
+# OS
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Logs
+*.log
+journalctl/
+
+# Don't commit Helm chart downloads
+charts/
