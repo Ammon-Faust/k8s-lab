@@ -1,6 +1,6 @@
 # kps-values.yaml
 grafana:
-  adminPassword: "V3y90!LkeepApuUIDhJy"
+  adminPassword: "password"
   service:
     type: NodePort
     nodePort: 30300
