@@ -1,0 +1,13 @@
+deploymentMode: SingleBinary
+singleBinary:
+  persistence:
+    enabled: true
+    size: 10Gi
+loki:
+  commonConfig:
+    replication_factor: 1
+  storage:
+    bucketNames:
+      chunks: chunks
+      ruler: ruler
+  useTestSchema: true

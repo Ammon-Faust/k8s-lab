@@ -1,0 +1,33 @@
+# kps-values.yaml
+grafana:
+  adminPassword: "V3y90!LkeepApuUIDhJy"
+  service:
+    type: NodePort
+    nodePort: 30300
+
+prometheus:
+  prometheusSpec:
+    retention: 7d
+    resources:
+      requests:
+        memory: 512Mi
+        cpu: 250m
+      limits:
+        memory: 1Gi
+        cpu: "1"
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          storageClassName: local-path
+          resources:
+            requests:
+              storage: 10Gi
+
+alertmanager:
+  enabled: true
+
+nodeExporter:
+  resources:
+    requests:
+      memory: 64Mi
+      cpu: 50m   
