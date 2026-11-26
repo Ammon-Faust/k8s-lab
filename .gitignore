@@ -1,24 +1,33 @@
-# Kubernetes secrets and kubeconfigs
+# Secrets and credentials
 kubeconfig*
+k3s.yaml
+*.kubeconfig
+node-token
+*.token
 *.secret
+*secret*.yaml
+.env
+*.env
 *.pem
 *.key
+*wifi*.yaml
 
 # Helm
 *.tgz
-helm-history/
 
-# Local storage claims
-local-path-provisioner/
-
-# OS
+# Terraform
 .terraform/
 *.tfstate
-*.tfstate.backup
+*.tfstate.*
+*.tfvars
+crash.log
 
 # Logs
 *.log
-journalctl/
 
-# Don't commit Helm chart downloads
-charts/
+# OS and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
